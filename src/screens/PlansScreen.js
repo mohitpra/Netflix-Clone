@@ -65,7 +65,7 @@ function PlansScreen() {
             if(sessionId) {
                 //We have a session, let's redirect to checkout
                 //Init stripe
-                const stripe = await loadStripe("pk_test_51JIRPDSAoTAVqI2qQ6PlqsH8M8YxgXZuUOi1o8ouzgrE6kqp27i92V8tytNlG1EUDbBqvkCwbLGrjdSb6tQycgqz00c1HwaOYV");
+                const stripe = await loadStripe("USE YOUR OWN KEY");
                 stripe.redirectToCheckout({sessionId});
             }
         });
